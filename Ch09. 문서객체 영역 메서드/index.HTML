@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+   <script src="main.js" defer></script>
+   <style>
+   .area1 {
+      width: 200px;
+      height: 200px;
+      padding : 20px;
+      margin : 30px;
+      border: 10px solid black;
+      background-color : pink;
+   }
+   .area2 {
+      box-sizing : border-box;
+      width: 200px;
+      height: 200px;
+      padding : 20px;
+      margin : 30px;
+      border: 10px solid black;
+      background-color :lightskyblue;
+   }
+   .area3 {
+      width: 100px;
+      height: 100px;
+      padding : 20px;
+      margin : 30px;
+      border: 10px solid black;
+      background-color :lightgreen;
+   }
+   
+   </style>
+</head>
+<body>
+   
+<div class="area1">
+   <h1>영역1</h1>
+</div>
+<p>width(): <span class="w1"></span></p>
+<p>innerWihth():<span class="w2"></span></p>
+<p>outerWidth():<span class="w3"></span></p>
+<p>outerWidth(true):<span class="w4"></span></p>
+
+<hr>
+
+<div class="area2">
+   <h1>영역2</h1>
+</div>
+<p>width(): <span class="w5"></span></p>
+<p>innerWihth():<span class="w6"></span></p>
+<p>outerWidth():<span class="w7"></span></p>
+<p>outerWidth(true):<span class="w8"></span></p>
+
+<div class="area3">
+   <h1 class="getWidth"></h1>
+</div>
+
+
+
+
+</body>
+</html>
