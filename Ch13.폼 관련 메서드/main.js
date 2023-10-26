@@ -24,6 +24,22 @@ $('#fruit').change(function(){
 });
 
 
+//submit() / submit메서드는 데이터를 전송하는 사용이 아닌 전송을 시키는 이벤트의 개념만 가진다 / 살재 전송 메서드 X
+$('#joinForm').submit(function(e){
+ e.prventDefault();
+
+ let val1 = $('#id').val();
+ let val2 = $('#password').val();
+
+ if (val1 =='' || val2 =='') {
+   alert('값을 모두 작성하세요')
+ } else {
+   alert("회원가입이 완료되었습니다.");
+   document.joinForm.submit();    //데이터를 전송하는 자바스크립트 문법
+  
+}
+});
+
 
 
 
